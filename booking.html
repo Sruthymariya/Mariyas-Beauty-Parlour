@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book your Seat</title>
+</head>
+<body>
+    <h1>Waiting to See you in our Salon!</h1>
+    <form action="mailto:sruthymariyathomas@gmail.com" method="post">
+        <label>Name:</label>
+        <input type="text" required><br>
+        <label for="age">Age:</label>
+        <input type="range" id="age" name="age" min="13" max="80"><br><br>
+        
+        <SalonService>
+            <service>Select the services that you required:</service>
+            <div>
+                <input type="checkbox" id="Bridal" name="Bridal" value="Bridal">
+                <label>Bridal Makeover</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Services" name="Services" value="Services">
+                <label>Basic Salon Services</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Hair" name="Hair" value="Hair">
+                <label>Hair Makeover</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Facial" name="Facial" value="Facial">
+                <label>Facial</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Herbal" name="Herbal" value="Herbal">
+                <label>Herbal Treatments</label>
+            </div>
+        </SalonService><br>        
+
+        <label for="tel">Mobile:</label>
+        <input type="tel" id="tel" name="tel" pattern="+91-(1-9){1}(0-9){9}" required><br>
+        <label>E-mail:</label>
+        <input type="email" id="email" size="30" required><br>
+        <label>Date:</label>
+        <input type="date" id="bookingdate" name="bookingdate" value="2023-01-17" min="2023-01-01" max="2024-12-31"><br>
+
+        <label>Comments:</label>
+        <textarea rows="4" cols="18" value="Please mention the specific service that is required..."></textarea><br>
+
+        <input value="Book" type="submit">
+    </form>
+</body>
+</html>
